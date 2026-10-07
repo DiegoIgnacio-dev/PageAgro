@@ -4,21 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>AgroServicios San Pablo | Fumigación, Siembra, Rastra y Cosecha - Río Bueno</title>
+  <link rel="stylesheet" href="css/style.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
-  <style>
-    :root{--verde:#1B5E20;--verde2:#2E7D32;--amarillo:#FFC107;--tierra:#795548}
-    body{font-family:'Segoe UI',sans-serif}
-    .bg-verde{background:var(--verde)}
-    .btn-verde{background:var(--verde2);color:white;font-weight:700;border:0}
-    .btn-verde:hover{background:var(--verde);color:white}
-    .text-verde{color:var(--verde2)}
-    .hero{background:linear-gradient(rgba(0,0,0,.6),rgba(27,94,32,.7)),url('https://images.unsplash.com/photo-1625246333195-78d9c38ad449?q=80&w=1200');background-size:cover;background-position:center}
-    .card-serv{border:0;border-left:5px solid var(--amarillo);transition:.2s}
-    .card-serv:hover{transform:translateY(-4px);box-shadow:0 10px 20px rgba(0,0,0,.15)}
-    .whatsapp-float{position:fixed;bottom:20px;right:20px;background:#25D366;color:white;border-radius:50%;width:60px;height:60px;display:flex;align-items:center;justify-content:center;font-size:32px;z-index:999;box-shadow:0 4px 15px rgba(0,0,0,.3)}
-    .tractor-badge{position:absolute;top:10px;left:10px}
-  </style>
+
 </head>
 <body>
 
@@ -134,12 +123,18 @@
       <span class="badge bg-light text-dark p-2"><i class="bi bi-check"></i> Pago con grano / transferencia</span>
     </div>
     <a href="https://wa.me/569XXXXXXXX?text=Hola%20AgroServicios%20San%20Pablo,%20quiero%20cotizar%20servicio%20para%20mi%20campo" class="btn btn-warning btn-lg mt-4 fw-bold"><i class="bi bi-whatsapp"></i> Hablar directo por WhatsApp</a>
-    <p class="small mt-3 opacity-75">San Pablo - Río Bueno - Crucero - La Unión - Osorno - +56 9 XXXX XXXX</p>
-  </div>
+    <p class="small mt-3 opacity-75">San Pablo - Río Bueno - Crucero - La Unión - Osorno - +56 9 40408699</p>
+<footer> 
+    <p>Diseñado y desarrollado por Diego Avila - Programador y analista de sistemas</p>
+</footer>  
+</div>
+
+  
 </section>
 
 <a href="https://wa.me/569XXXXXXXX" class="whatsapp-float"><i class="bi bi-whatsapp"></i></a>
 
+<script src="js/wspFunc.js"></script>
 <script>
 function setServicio(val){
   document.getElementById('servicio').value = val;
@@ -154,5 +149,6 @@ function cotizar(){
   window.open("https://wa.me/569XXXXXXXX?text=" + encodeURIComponent(msg), "_blank");
 }
 </script>
+
 </body>
 </html>

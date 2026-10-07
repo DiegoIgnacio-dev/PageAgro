@@ -1,0 +1,62 @@
+*{
+  --verde: #1b5e20;
+  --verde2: #2e7d32;
+  --amarillo: #ffc107;
+  --tierra: #795548;
+}
+body {
+  font-family: "Segoe UI", sans-serif;
+}
+.bg-verde {
+  background: var(--verde);
+}
+.btn-verde {
+  background: var(--verde2);
+  color: white;
+  font-weight: 700;
+  border: 0;
+}
+.btn-verde:hover {
+  background: var(--verde);
+  color: white;
+}
+.text-verde {
+  color: var(--verde2);
+}
+.hero {
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.6), rgba(27, 94, 32, 0.7)),
+    url("https://images.unsplash.com/photo-1625246333195-78d9c38ad449?q=80&w=1200");
+  background-size: cover;
+  background-position: center;
+}
+.card-serv {
+  border: 0;
+  border-left: 5px solid var(--amarillo);
+  transition: 0.2s;
+}
+.card-serv:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #25d366;
+  color: white;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+  z-index: 999;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+.tractor-badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
